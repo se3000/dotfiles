@@ -5,13 +5,13 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Bunch of symlinks
 
-ln -sfv "$DOTFILES_DIR/runcom/.bash_profile" ~
-ln -sfv "$DOTFILES_DIR/runcom/.inputrc" ~
-ln -sfv "$DOTFILES_DIR/runcom/.gemrc" ~
-ln -sfv "$DOTFILES_DIR/runcom/.vimrc.local" ~
-ln -sfv "$DOTFILES_DIR/runcom/.gitconfig" ~
-ln -sfv "$DOTFILES_DIR/runcom/.gitignore_global" ~
-ln -sfv "$DOTFILES_DIR/runcom/.git-together" ~
+ln -sfv "$DOTFILES_DIR/symlinks/.bash_profile" ~
+ln -sfv "$DOTFILES_DIR/symlinks/.inputrc" ~
+ln -sfv "$DOTFILES_DIR/symlinks/.gemrc" ~
+ln -sfv "$DOTFILES_DIR/symlinks/.vimrc.local" ~
+ln -sfv "$DOTFILES_DIR/symlinks/.gitconfig" ~
+ln -sfv "$DOTFILES_DIR/symlinks/.gitignore_global" ~
+ln -sfv "$DOTFILES_DIR/symlinks/.git-together" ~
 
 # Package managers & packages
 
