@@ -15,15 +15,18 @@ apps=(
   ack
   bash-completion2
   coreutils
+  direnv
   dockutil
   git
   go
+  grc
   grep
   hub
   mackup
   npm
   python
   rbenv
+  watch
   wget
   yarn
 )

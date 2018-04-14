@@ -59,3 +59,9 @@ unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE EXTRAFILE
 # Export
 
 export DOTFILES_DIR DOTFILES_EXTRA_DIR
+
+export BASH_IT="$HOME/.bash_it"
+export BASH_IT_THEME='bobby'
+unset MAILCHECK
+export SCM_CHECK=true
+source "$BASH_IT"/bash_it.sh
