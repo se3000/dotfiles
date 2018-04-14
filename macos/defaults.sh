@@ -1,4 +1,4 @@
-COMPUTER_NAME="Blade"
+COMPUTER_NAME="steveE*nix"
 
 osascript -e 'tell application "System Preferences" to quit'
 
@@ -31,7 +31,7 @@ sudo nvram SystemAudioVolume=" "
 defaults write com.apple.universalaccess reduceTransparency -bool true
 
 # Menu bar: show battery percentage
-defaults write com.apple.menuextra.battery ShowPercent YES
+defaults write com.apple.menuextra.battery ShowPercent NO
 
 # Disable opening and closing window animations
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
@@ -56,9 +56,6 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-# Disable Resume system-wide
-defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
-
 # Disable the crash reporter
 #defaults write com.apple.CrashReporter DialogType -string "none"
 
@@ -80,12 +77,6 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-
-# Trackpad: map bottom right corner to right-click
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
 # Trackpad: swipe between pages with three fingers
 defaults write NSGlobalDomain AppleEnableSwipeNavigateWithScrolls -bool true
@@ -134,12 +125,6 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
 sudo systemsetup -settimezone "Europe/Amsterdam" > /dev/null
 
-# Disable auto-correct
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
-
-# Stop iTunes from responding to the keyboard media keys
-#launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
-
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
@@ -173,9 +158,6 @@ defaults write com.apple.finder DisableAllAnimations -bool true
 # Finder: show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
 
-# Finder: show all filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
 
@@ -206,9 +188,6 @@ defaults write com.apple.frameworks.diskimages skip-verify -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 
-# Use AirDrop over every interface.
-defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
-
 # Always open everything in Finder's list view.
 # Use list view in all Finder windows by default
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
@@ -216,9 +195,6 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 # Disable the warning before emptying the Trash
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
-
-# Enable the MacBook Air SuperDrive on any Mac
-# sudo nvram boot-args="mbasd=1"
 
 # Expand the following File Info panes:
 # “General”, “Open with”, and “Sharing & Permissions”
@@ -229,7 +205,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict General -bool true Ope
 ###############################################################################
 
 # Show indicator lights for open applications in the Dock
-defaults write com.apple.dock show-process-indicators -bool true
+defaults write com.apple.dock show-process-indicators -bool false
 
 # Don’t animate opening applications from the Dock
 defaults write com.apple.dock launchanim -bool false
@@ -273,20 +249,20 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 # 12: Notification Center
 
 # Top left screen corner
-defaults write com.apple.dock wvous-tl-corner -int 0
-defaults write com.apple.dock wvous-tl-modifier -int 0
+# defaults write com.apple.dock wvous-tl-corner -int 0
+# defaults write com.apple.dock wvous-tl-modifier -int 0
 
 # Top right screen corner
-defaults write com.apple.dock wvous-tr-corner -int 0
-defaults write com.apple.dock wvous-tr-modifier -int 0
+# defaults write com.apple.dock wvous-tr-corner -int 0
+# defaults write com.apple.dock wvous-tr-modifier -int 0
 
 # Bottom left screen corner → Display to sleep
-defaults write com.apple.dock wvous-bl-corner -int 10
-defaults write com.apple.dock wvous-bl-modifier -int 0
+# defaults write com.apple.dock wvous-bl-corner -int 10
+# defaults write com.apple.dock wvous-bl-modifier -int 0
 
 # Bottom right screen corner
-defaults write com.apple.dock wvous-br-corner -int 0
-defaults write com.apple.dock wvous-br-modifier -int 0
+# defaults write com.apple.dock wvous-br-corner -int 0
+# defaults write com.apple.dock wvous-br-modifier -int 0
 
 ###############################################################################
 # Safari & WebKit                                                             #
@@ -310,7 +286,7 @@ defaults write com.apple.Safari HomePage -string "about:blank"
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 
 # Allow hitting the Backspace key to go to the previous page in history
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
+# defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
 
 # Hide Safari’s bookmarks bar by default
 defaults write com.apple.Safari ShowFavoritesBar -bool false
@@ -323,9 +299,6 @@ defaults write com.apple.Safari ShowSidebarInTopSites -bool false
 
 # Remove useless icons from Safari’s bookmarks bar
 defaults write com.apple.Safari ProxiesInBookmarksBar "()"
-
-# Allow hitting the Backspace key to go to the previous page in history
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
 
 # Enable the Develop menu, the Web Inspector, and the debug menu in Safari
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
@@ -374,7 +347,7 @@ defaults write com.apple.mail ConversationViewMarkAllAsRead -bool true
 # Disable Spotlight indexing for any volume that gets mounted and has not yet
 # been indexed before.
 # Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
-sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
+#sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
 # Change indexing order and disable some file types
 defaults write com.apple.spotlight orderedItems -array \
 	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
@@ -461,10 +434,10 @@ defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
 defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
 
 # Turn on app auto-update
-defaults write com.apple.commerce AutoUpdate -bool true
+# defaults write com.apple.commerce AutoUpdate -bool true
 
 # Allow the App Store to reboot machine on macOS updates
-defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
+# defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 
 ###############################################################################
 # Kill affected applications                                                  #

@@ -12,36 +12,20 @@ brew upgrade
 # Install packages
 
 apps=(
+  ack
   bash-completion2
-  bats
-  battery
   coreutils
-  diff-so-fancy
   dockutil
-  ffmpeg
-  fasd
-  gifsicle
   git
-  git-extras
-  gnu-sed --with-default-names
-  grep --with-default-names
+  go
+  grep
   hub
-  httpie
-  imagemagick
-  jq
-  lynx
   mackup
-  nano
-  pandoc
-  peco
-  psgrep
+  npm
   python
-  shellcheck
-  ssh-copy-id
-  tree
-  unar
+  rbenv
   wget
-  wifi-password
+  yarn
 )
 
 brew install "${apps[@]}"
