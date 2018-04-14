@@ -1,0 +1,40 @@
+"
+" Colorschemes from Pivotal
+"
+Plugin 'tpope/vim-vividchalk'
+Plugin 'tpope/vim-projectionist'
+Plugin 'molokai'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'wgibbs/vim-irblack'
+Plugin 'candycode.vim'
+Plugin 'Colour-Sampler-Pack'
+Plugin 'flazz/vim-colorschemes'
+
+
+colorscheme solarized
+if getcwd() ==# '/Users/steve/workspace/go_path/src/github.com/smartcontractkit/chainlink'
+  colorscheme Tomorrow-Night-Eighties
+elseif getcwd() ==# '/Users/steve/workspace/chainlink-ruby'
+  colorscheme molokai
+elseif getcwd() ==# '/Users/steve/workspace/btc2nxt'
+  colorscheme Tomorrow-Night
+elseif getcwd() ==# '/Users/steve/workspace/wei_watchers'
+  colorscheme nightflight2
+elseif getcwd() ==# '/Users/steve/workspace/heorem'
+  colorscheme skittles_berry
+elseif getcwd() ==# '/Users/steve/workspace/clickable_json'
+  colorscheme putty
+endif
+
+let g:go_fmt_command = "goimports"
+nmap \         <Plug>VinegarUp
+
+:command Test GoTest!
+cnoreabbrev Ack Ag
+cnoreabbrev ACk Ag
+cnoreabbrev ACK Ag
+map <leader>c :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%").":".line(".")<CR>
+map <c-c> :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%").":".line(".")<CR>
+map <c-n> :tabe<CR>
+map <leader>t :w<CR>:GoTest!<CR>
+map <leader>i :GoInfo<CR>

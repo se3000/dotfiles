@@ -7,6 +7,7 @@ brew upgrade
 # Install packages
 
 apps=(
+  ag
   ack
   bash-completion2
   coreutils
@@ -23,6 +24,7 @@ apps=(
   python
   rbenv
   watch
+  vim
   wget
   yarn
 )
