@@ -1,22 +1,20 @@
 export WORKSPACE="$HOME/workspace"
 export GOPATH="$WORKSPACE/go_path"
+export DOTFILES_DIR="$WORKSPACE/dotfiles"
 
-DOTFILES_DIR="$WORKSPACE/dotfiles"
-PATH="$DOTFILES_DIR/bin:$PATH"
-for DOTFILE in "$DOTFILES_DIR"/config/*.sh; do
-  [ -f "$DOTFILE" ] && . "$DOTFILE"
+for file in "$DOTFILES_DIR"/config/*.sh; do
+  [ -f "$DOTFILE" ] && . "$file"
 done
 
 if [ -f "$HOME/.bash_profile.local" ]; then
   source "$HOME/.bash_profile.local"
 fi
-unset DOTFILE
-export DOTFILES_DIR
 
 export BASH_IT="$HOME/.bash_it"
 export BASH_IT_THEME='bobby'
 unset MAILCHECK
 export SCM_CHECK=true
+
 source ~/.bashrc
 source "$BASH_IT"/bash_it.sh
 
