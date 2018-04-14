@@ -29,3 +29,5 @@
 
 [credential]
   helper = osxkeychain
+[include]
+	path = /Users/steve/.git-together

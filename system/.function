@@ -49,3 +49,20 @@ mk() {
 unshorten() {
   curl -sIL $1 | sed -n 's/Location: *//p'
 }
+
+# https://github.com/dimroc/dotfiles/blob/master/bash_profile_includes/functions.sh
+function workspace() {
+  if [ $# -gt 0 ]; then
+    cd ~/workspace/$1
+  else
+    cd ~/workspace
+  fi
+}
+
+function ws() {
+  if [ $# -gt 0 ]; then
+    cd ~/workspace/$1
+  else
+    cd ~/workspace
+  fi
+}

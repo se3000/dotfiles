@@ -12,12 +12,17 @@ ln -sfv "$DOTFILES_DIR/symlinks/.vimrc.local" ~
 ln -sfv "$DOTFILES_DIR/symlinks/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/symlinks/.gitignore_global" ~
 ln -sfv "$DOTFILES_DIR/symlinks/.git-together" ~
+ln -sfv "$DOTFILES_DIR/symlinks/.ackrc" ~
+ln -sfv "$DOTFILES_DIR/symlinks/.agignore" ~
 
 # Package managers & packages
 
 . "$DOTFILES_DIR/install/brew.sh"
+. "$DOTFILES_DIR/install/git.sh"
 . "$DOTFILES_DIR/install/npm.sh"
 . "$DOTFILES_DIR/install/bash.sh"
 . "$DOTFILES_DIR/install/bash-it.sh"
 . "$DOTFILES_DIR/install/brew-cask.sh"
 . "$DOTFILES_DIR/install/vim.sh"
+
+echo "FIN!"

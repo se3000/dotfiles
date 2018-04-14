@@ -1,4 +1,20 @@
 alias aliases="alias | sed 's/=.*//'"
 alias functions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'"
 alias paths='echo -e ${PATH//:/\\n}'
-alias git='git-together'
+
+alias cdcl="cd $GOPATH/src/github.com/smartcontractkit/chainlink/"
+alias clgo="cd $GOPATH/src/github.com/smartcontractkit/chainlink/"
+alias clrb="cd ~/workspace/chainlink-ruby"
+alias go="grc go"
+alias git=git-together
+alias gt="go test ./..."
+alias gt0="GOCACHE=off go test ./..."
+alias gtr="go test -v ./... -run"
+alias gtr0="GOCACHE=off go test -v ./... -run"
+alias rspec="bundle exec rspec"
+
+# https://github.com/dimroc/dotfiles/blob/master/bash_profile_includes/aliases.sh
+alias ll="ls -lAh"
+alias grep='grep -H -n'
+alias untar="tar -xvf"
+alias be="bundle exec"

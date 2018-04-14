@@ -1,0 +1,9 @@
+.idea/
+.bundle/
+node_modules/
+bower_components/
+ember/dist/
+deps/
+tmp/
+log/
+assets/bundles/
