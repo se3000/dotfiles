@@ -3,20 +3,13 @@
 export DOTFILES_DIR
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# Bunch of symlinks
+for file in "$DOTFILES_DIR/symlinks/*"; do
+  ln -sfv $file ~
+done
 
-ln -sfv "$DOTFILES_DIR/symlinks/.bash_profile" ~
-ln -sfv "$DOTFILES_DIR/symlinks/.inputrc" ~
-ln -sfv "$DOTFILES_DIR/symlinks/.gemrc" ~
-ln -sfv "$DOTFILES_DIR/symlinks/.vimrc.local" ~
-ln -sfv "$DOTFILES_DIR/symlinks/.gitconfig" ~
-ln -sfv "$DOTFILES_DIR/symlinks/.gitignore_global" ~
-ln -sfv "$DOTFILES_DIR/symlinks/.git-together" ~
-ln -sfv "$DOTFILES_DIR/symlinks/.ackrc" ~
-ln -sfv "$DOTFILES_DIR/symlinks/.agignore" ~
-ln -sfv "$DOTFILES_DIR/symlinks/.tmux.conf" ~
-
-# Package managers & packages
+for file in "$DOTFILES_DIR/macos/*"; do
+  [[ -r $file ]] && . $file;
+done
 
 . "$DOTFILES_DIR/install/brew.sh"
 . "$DOTFILES_DIR/install/git.sh"
