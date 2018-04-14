@@ -5,7 +5,8 @@ apps=(
   firefox
   flux
   google-chrome
-  macdown
+  iterm2
+  shiftit
   virtualbox
   vlc
 )

@@ -14,6 +14,7 @@ ln -sfv "$DOTFILES_DIR/symlinks/.gitignore_global" ~
 ln -sfv "$DOTFILES_DIR/symlinks/.git-together" ~
 ln -sfv "$DOTFILES_DIR/symlinks/.ackrc" ~
 ln -sfv "$DOTFILES_DIR/symlinks/.agignore" ~
+ln -sfv "$DOTFILES_DIR/symlinks/.tmux.conf" ~
 
 # Package managers & packages
 
@@ -23,6 +24,7 @@ ln -sfv "$DOTFILES_DIR/symlinks/.agignore" ~
 . "$DOTFILES_DIR/install/bash.sh"
 . "$DOTFILES_DIR/install/bash-it.sh"
 . "$DOTFILES_DIR/install/brew-cask.sh"
+. "$DOTFILES_DIR/install/tmux.sh"
 . "$DOTFILES_DIR/install/vim.sh"
 
 echo "FIN!"

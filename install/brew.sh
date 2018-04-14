@@ -25,6 +25,7 @@ apps=(
   python
   rbenv
   seattle-beach/tap/git-together
+  tmux
   watch
   vim
   wget
