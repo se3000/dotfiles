@@ -22,6 +22,7 @@ apps=(
   grc
   grep
   hub
+  lynx
   mackup
   npm
   python

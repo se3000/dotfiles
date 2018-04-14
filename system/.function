@@ -1,35 +1,5 @@
-# Switch long/short prompt
-
-ps0() {
-  unset PROMPT_COMMAND
-  PS1='$ '
-}
-
-ps1() {
-  source "$DOTFILES_DIR"/system/.prompt
-}
-
-# Get named var (usage: get "VAR_NAME")
-
-get() {
-  echo "${!1}"
-}
-
-# Add to path
-
 prepend-path() {
   [ -d $1 ] && PATH="$1:$PATH"
-}
-
-# Show 256 TERM colors
-
-colors() {
-  local X=$(tput op)
-  local Y=$(printf %$((COLUMNS-6))s)
-  for i in {0..256}; do
-  o=00$i;
-  echo -e ${o:${#o}-3:3} $(tput setaf $i;tput setab $i)${Y// /=}$X;
-  done
 }
 
 # Calculator
@@ -40,7 +10,7 @@ calc() {
 
 # Weather
 
-meteo() {
+weather() {
   local LOCALE=`echo ${LANG:-en} | cut -c1-2`
   if [ $# -eq 0 ]; then
     local LOCATION=`curl -s ipinfo.io/loc`
@@ -50,8 +20,32 @@ meteo() {
   curl -s "$LOCALE.wttr.in/$LOCATION"
 }
 
-# Markdown
+# Open man page as PDF
 
-md() {
-  pandoc $1 | lynx -stdin -dump
+manpdf() {
+  man -t "$1" | open -f -a /Applications/Preview.app/
+}
+
+
+# Open query in Dash app
+
+dash() {
+  case $# in
+    1) QUERY="$1";;
+    2) QUERY="$1:$2";;
+    *) echo "Usage: dash [docset] query"; return 1;
+  esac
+  open "dash://$QUERY"
+}
+
+# Create a new directory and enter it
+
+mk() {
+  mkdir -p "$@" && cd "$@"
+}
+
+# Find real from shortened url
+
+unshorten() {
+  curl -sIL $1 | sed -n 's/Location: *//p'
 }
