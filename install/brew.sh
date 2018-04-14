@@ -13,6 +13,7 @@ apps=(
   coreutils
   direnv
   dockutil
+  fzf
   git
   go
   grc
@@ -23,6 +24,7 @@ apps=(
   npm
   python
   rbenv
+  seattle-beach/tap/git-together
   watch
   vim
   wget
