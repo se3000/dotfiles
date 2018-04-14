@@ -3,7 +3,7 @@ export GOPATH="$WORKSPACE/go_path"
 
 DOTFILES_DIR="$WORKSPACE/dotfiles"
 PATH="$DOTFILES_DIR/bin:$PATH"
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,path,env,alias,grep,custom}; do
+for DOTFILE in "$DOTFILES_DIR"/config/*.sh; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
