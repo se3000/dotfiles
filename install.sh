@@ -19,8 +19,8 @@ done
 . "$DOTFILES_DIR/setup/brew-cask.sh"
 . "$DOTFILES_DIR/setup/tmux.sh"
 . "$DOTFILES_DIR/setup/vim.sh"
-. "$DOTFILES_DIR/defaults-chrome.sh"
-. "$DOTFILES_DIR/defaults.sh"
-. "$DOTFILES_DIR/dock.sh"
+. "$DOTFILES_DIR/setup/defaults-chrome.sh"
+. "$DOTFILES_DIR/setup/defaults.sh"
+. "$DOTFILES_DIR/setup/dock.sh"
 
 echo "FIN!"
