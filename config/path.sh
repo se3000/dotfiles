@@ -1,9 +1,6 @@
 prepend-path "/bin"
 prepend-path "/usr/bin"
 prepend-path "/usr/local/bin"
-prepend-path "$DOTFILES_BREW_PREFIX_COREUTILS/libexec/gnubin"
-prepend-path "$DOTFILES_DIR/bin"
-prepend-path "$HOME/bin"
 prepend-path "$HOME/.cargo/bin:$PATH"
 prepend-path "$GOPATH/bin:$PATH"
 

@@ -7,7 +7,7 @@ alias gt="go test ./..."
 alias gt0="GOCACHE=off go test ./..."
 alias gtr="go test -v ./... -run"
 alias gtr0="GOCACHE=off go test -v ./... -run"
-alias git=git-together
+alias gitw="alias git=git-together"
 alias rspec="bundle exec rspec"
 
 alias clgo="cd $GOPATH/src/github.com/smartcontractkit/chainlink/"

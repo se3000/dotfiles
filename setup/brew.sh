@@ -10,6 +10,7 @@ apps=(
   ag
   ack
   bash-completion2
+  bash
   coreutils
   direnv
   dockutil
