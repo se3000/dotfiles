@@ -7,7 +7,7 @@ apps=(
   google-chrome
   iterm2
   shiftit
-  unar
+  the-unarchiver
   virtualbox
   vlc
 )

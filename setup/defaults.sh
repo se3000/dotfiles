@@ -1,4 +1,4 @@
-COMPUTER_NAME="steveE*nix"
+COMPUTER_NAME="codingMachine"
 
 osascript -e 'tell application "System Preferences" to quit'
 
