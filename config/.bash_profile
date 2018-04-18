@@ -3,7 +3,7 @@ export GOPATH="$WORKSPACE/go_path"
 export DOTFILES_DIR="$WORKSPACE/dotfiles"
 
 for file in "$DOTFILES_DIR"/config/*.sh; do
-  [ -f "$DOTFILE" ] && . "$file"
+  . $file
 done
 
 if [ -f "$HOME/.bash_profile.local" ]; then

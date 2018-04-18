@@ -7,10 +7,6 @@ for file in "$DOTFILES_DIR/config/.*"; do
   ln -sfv $file ~
 done
 
-for file in "$DOTFILES_DIR/macos/*"; do
-  [[ -r $file ]] && . $file;
-done
-
 . "$DOTFILES_DIR/setup/brew.sh"
 . "$DOTFILES_DIR/setup/git.sh"
 . "$DOTFILES_DIR/setup/npm.sh"
