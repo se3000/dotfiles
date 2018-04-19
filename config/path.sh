@@ -1,8 +1,8 @@
 prepend-path "/bin"
 prepend-path "/usr/bin"
 prepend-path "/usr/local/bin"
-prepend-path "$HOME/.cargo/bin:$PATH"
-prepend-path "$GOPATH/bin:$PATH"
+prepend-path "$GOPATH/bin"
+prepend-path "$HOME/.cargo/bin"
 
 # Remove duplicates (preserving prepended items)
 # Source: http://unix.stackexchange.com/a/40755
