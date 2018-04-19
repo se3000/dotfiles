@@ -6,10 +6,6 @@ for file in "$DOTFILES_DIR"/config/*.sh; do
   . $file
 done
 
-if [ -f "$HOME/.bash_profile.local" ]; then
-  source "$HOME/.bash_profile.local"
-fi
-
 export BASH_IT="$HOME/.bash_it"
 export BASH_IT_THEME='bobby'
 unset MAILCHECK
@@ -21,8 +17,9 @@ source "$BASH_IT"/bash_it.sh
 eval "$(direnv hook bash)"
 eval "$(rbenv init -)"
 tmux source-file ~/.tmux.conf
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
-fi
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f /Users/steve/.travis/travis.sh ] && source /Users/steve/.travis/travis.sh
+[ -f ~/.git-completion.bash ] && . ~/.git-completion.bash
+
+[ -f "$HOME/.bash_profile.local" ] && source "$HOME/.bash_profile.local"

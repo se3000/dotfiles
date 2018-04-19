@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 
-export DOTFILES_DIR
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export DOTFILES_DIR
 
-for file in "$DOTFILES_DIR/config/.*"; do
-  [ -f "$file" ] && ln -sfv $file ~
-done
+. "$DOTFILES_DIR/symlink_dotfiles.sh"
 
 . "$DOTFILES_DIR/setup/brew.sh"
 . "$DOTFILES_DIR/setup/git.sh"
