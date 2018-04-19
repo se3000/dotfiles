@@ -1,6 +1,5 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew tap Goles/battery
 brew update
 brew upgrade
 
@@ -27,6 +26,7 @@ apps=(
   rbenv
   seattle-beach/tap/git-together
   tmux
+  travis
   watch
   vim
   wget
@@ -34,6 +34,3 @@ apps=(
 )
 
 brew install "${apps[@]}"
-
-export DOTFILES_BREW_PREFIX_COREUTILS=`brew --prefix coreutils`
-set-config "DOTFILES_BREW_PREFIX_COREUTILS" "$DOTFILES_BREW_PREFIX_COREUTILS" "$DOTFILES_CACHE"
