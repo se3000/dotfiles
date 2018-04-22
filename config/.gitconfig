@@ -1,6 +1,6 @@
 [user]
-  name = Steve Ellis
-  email = email@steveell.is
+	name = Steve Ellis
+	email = email@steveell.is
 
 [core]
   excludesfile = ~/.gitignore_global
@@ -31,3 +31,5 @@
   helper = osxkeychain
 [include]
 	path = /Users/steve/.git-together
+[git-together]
+	active = se
