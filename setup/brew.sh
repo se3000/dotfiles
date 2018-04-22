@@ -9,6 +9,7 @@ apps=(
   ag
   ack
   bash-completion2
+  dep
   direnv
   dockutil
   fzf

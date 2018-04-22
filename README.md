@@ -8,6 +8,7 @@ After gutting [webpro's dotfiles](https://github.com/webpro/dotfiles)(except his
     sudo softwareupdate -i -a
     xcode-select --install
     mkdir ~/workspace && cd ~/workspace
-    git clone https://github.com/se3000/dotfiles.git
+    git clone git@github.com:se3000/dotfiles.git
     ./dotfiles/install.sh
+    ssh-keygen
 ```
