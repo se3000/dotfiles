@@ -21,7 +21,6 @@ apps=(
   m-cli
   npm
   python
-  reflex
   rbenv
   seattle-beach/tap/git-together
   tmux
@@ -34,3 +33,5 @@ apps=(
 )
 
 brew install "${apps[@]}"
+
+. /usr/local/opt/fzf/install
