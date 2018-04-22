@@ -18,7 +18,7 @@ RVM_THEME_PROMPT_SUFFIX="|"
 # This Pivotal's customization of the bobby theme
 
 function prompt_command() {
-  PS1="\n${red}(╯°□°)╯${reset_color}︵${yellow}┻━┻ ${reset_color}in ${purple}\w\n${bold_cyan}$(scm_char)${green}$(scm_prompt_info) 👉 ${reset_color} "
+  PS1="\n${red}(╯°□°)╯${reset_color}︵${yellow}┻━┻ ${reset_color}in ${purple}\w\n${bold_cyan}$(scm_char)${green}$(scm_prompt_info) ${green}→ ${reset_color} "
 }
 
 PROMPT_COMMAND=prompt_command;

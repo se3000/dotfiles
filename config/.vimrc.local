@@ -26,6 +26,7 @@ elseif getcwd() ==# '/Users/steve/workspace/clickable_json'
   colorscheme putty
 endif
 
+let g:go_fmt_command = "goimports"
 nmap \         <Plug>VinegarUp
 
 :command Test GoTest!

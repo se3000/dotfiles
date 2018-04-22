@@ -16,7 +16,7 @@ source "$BASH_IT"/bash_it.sh
 
 eval "$(direnv hook bash)"
 eval "$(rbenv init -)"
-tmux source-file ~/.tmux.conf
+#tmux source-file ~/.tmux.conf
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 [ -f /Users/steve/.travis/travis.sh ] && source /Users/steve/.travis/travis.sh
