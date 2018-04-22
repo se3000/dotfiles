@@ -219,6 +219,9 @@ defaults write com.apple.dock showhidden -bool true
 # No bouncing icons
 defaults write com.apple.dock no-bouncing -bool true
 
+# Transparent dock
+defaults write com.apple.dock hide-mirror -bool true;killall Dock
+
 ###############################################################################
 # Dashboard                                                                   #
 ###############################################################################
@@ -438,6 +441,9 @@ defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
 
 # Allow the App Store to reboot machine on macOS updates
 # defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
+
+# add workspace to favorited items
+sfltool add-item com.apple.LSSharedFileList.FavoriteItems file:///Users/$(whoami)/workspace/
 
 ###############################################################################
 # Kill affected applications                                                  #

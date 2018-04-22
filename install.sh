@@ -17,4 +17,4 @@ export DOTFILES_DIR
 . "$DOTFILES_DIR/setup/defaults.sh"
 . "$DOTFILES_DIR/setup/dock.sh"
 
-echo "FIN!"
+launchctl bootout user/$(id -u $(whoami))
