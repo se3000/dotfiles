@@ -1,6 +1,7 @@
 # Install packages
 
 apps=(
+  bartender
   blockblock
   dropbox
   firefox
@@ -10,10 +11,12 @@ apps=(
   iterm2
   knockknock
   little-snitch
+  macdown
   micro-snitch
   shiftit
   skitch
   slack
+  textual
   the-unarchiver
   virtualbox
   vlc

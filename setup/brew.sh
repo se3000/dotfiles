@@ -18,9 +18,10 @@ apps=(
   grep
   hub
   lynx
-  mackup
+  m-cli
   npm
   python
+  reflex
   rbenv
   seattle-beach/tap/git-together
   tmux
@@ -29,6 +30,7 @@ apps=(
   vim
   wget
   yarn
+  youtube-dl
 )
 
 brew install "${apps[@]}"
