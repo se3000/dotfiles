@@ -16,4 +16,7 @@ export DOTFILES_DIR
 . "$DOTFILES_DIR/setup/dock.sh"
 . "$DOTFILES_DIR/setup/defaults.sh"
 
+mkdir ~/workspace/go_path
+ln -s ~/workspace/go_path ~/go
+
 launchctl bootout user/$(id -u $(whoami))

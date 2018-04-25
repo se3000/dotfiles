@@ -10,7 +10,7 @@ alias gtr0="GOCACHE=off go test -v ./... -run"
 alias gitw="alias git=git-together"
 alias rspec="bundle exec rspec"
 
-alias clgo="cd $GOPATH/src/github.com/smartcontractkit/chainlink/"
+alias clgo="cd ~/go/src/github.com/smartcontractkit/chainlink/"
 alias clrb="ws chainlink-ruby"
 alias dotfiles="ws dotfiles"
 
