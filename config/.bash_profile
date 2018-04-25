@@ -3,7 +3,7 @@ export GOPATH="$WORKSPACE/go_path"
 export DOTFILES_DIR="$WORKSPACE/dotfiles"
 
 for file in "$DOTFILES_DIR"/config/*.sh; do
-  . $file
+ [ -f $file ] && . $file
 done
 
 export BASH_IT="$HOME/.bash_it"
