@@ -21,6 +21,7 @@ apps=(
   lynx
   m-cli
   npm
+  postgres
   python
   rbenv
   seattle-beach/tap/git-together

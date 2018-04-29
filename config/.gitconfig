@@ -33,3 +33,5 @@
 	path = /Users/steve/.git-together
 [git-together]
 	active = se
+[git-together "user"]
+	name = Steve Ellis
