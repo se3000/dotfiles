@@ -17,6 +17,7 @@ apps=(
   go
   grc
   grep
+  heroku
   hub
   lynx
   m-cli

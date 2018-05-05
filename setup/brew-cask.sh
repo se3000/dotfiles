@@ -8,7 +8,9 @@ apps=(
   flux
   gitter
   google-chrome
+  gpg-suite
   iterm2
+  keybase
   knockknock
   little-snitch
   macdown
