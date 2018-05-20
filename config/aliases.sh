@@ -13,6 +13,10 @@ alias rspec="bundle exec rspec"
 alias clgo="cd ~/go/src/github.com/smartcontractkit/chainlink/"
 alias clrb="ws chainlink-ruby"
 alias dotfiles="ws dotfiles"
+alias new_tmux="tmux -S /tmp/tmux_default"
+alias tmuxr="tmux -S /tmp/tmux_default attach"
+alias new_tmux_pair="tmux -S /tmp/pair"
+alias tmux_pair="tmux -S /tmp/pair attach"
 
 # https://github.com/dimroc/dotfiles/blob/master/bash_profile_includes/aliases.sh
 alias ll="ls -lAh"
