@@ -19,6 +19,7 @@ apps=(
   grep
   heroku
   hub
+  kubectl
   lynx
   m-cli
   npm

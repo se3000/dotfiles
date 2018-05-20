@@ -3,11 +3,13 @@
 apps=(
   bartender
   blockblock
+  docker
   dropbox
   firefox
   flux
   gitter
   google-chrome
+  google-cloud-sdk
   gpg-suite
   iterm2
   keybase

@@ -13,7 +13,8 @@ Plugin 'flazz/vim-colorschemes'
 
 colorscheme solarized
 if getcwd() ==# '/Users/steve/workspace/go_path/src/github.com/smartcontractkit/chainlink'
-  colorscheme Tomorrow-Night-Eighties
+  "colorscheme Tomorrow-Night-Eighties
+  colorscheme solarized
 elseif getcwd() ==# '/Users/steve/workspace/chainlink-ruby'
   colorscheme molokai
 elseif getcwd() ==# '/Users/steve/workspace/btc2nxt'
@@ -35,6 +36,5 @@ cnoreabbrev ACk Ag
 cnoreabbrev ACK Ag
 map <leader>c :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%").":".line(".")<CR>
 map <c-c> :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%").":".line(".")<CR>
-map <c-n> :tabe<CR>
-map <leader>t :w<CR>:GoTest!<CR>
-map <leader>i :GoInfo<CR>
+unmap <c-h>
+unmap <c-l>
