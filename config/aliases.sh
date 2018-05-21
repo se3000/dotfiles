@@ -23,3 +23,5 @@ alias ll="ls -lAh"
 alias grep='grep -H -n'
 alias untar="tar -xvf"
 alias be="bundle exec"
+
+alias shutupvim="rm ~/.vim/.tmp/*.swp"

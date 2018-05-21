@@ -12,7 +12,6 @@ unset MAILCHECK
 export SCM_CHECK=true
 
 source ~/.bashrc
-source "$BASH_IT"/bash_it.sh
 
 eval "$(direnv hook bash)"
 eval "$(rbenv init -)"
@@ -23,3 +22,5 @@ tmux source-file ~/.tmux.conf
 [ -f ~/.git-completion.bash ] && . ~/.git-completion.bash
 
 [ -f "$HOME/.bash_profile.local" ] && source "$HOME/.bash_profile.local"
+
+source "$BASH_IT"/bash_it.sh
