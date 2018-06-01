@@ -10,21 +10,17 @@ Plugin 'candycode.vim'
 Plugin 'Colour-Sampler-Pack'
 Plugin 'flazz/vim-colorschemes'
 
+set expandtab
+set nocursorline
+set synmaxcol=150
 
 colorscheme solarized
 if getcwd() ==# '/Users/steve/workspace/go_path/src/github.com/smartcontractkit/chainlink'
-  "colorscheme Tomorrow-Night-Eighties
   colorscheme solarized
 elseif getcwd() ==# '/Users/steve/workspace/chainlink-ruby'
   colorscheme molokai
 elseif getcwd() ==# '/Users/steve/workspace/btc2nxt'
   colorscheme Tomorrow-Night
-elseif getcwd() ==# '/Users/steve/workspace/wei_watchers'
-  colorscheme nightflight2
-elseif getcwd() ==# '/Users/steve/workspace/heorem'
-  colorscheme skittles_berry
-elseif getcwd() ==# '/Users/steve/workspace/clickable_json'
-  colorscheme putty
 endif
 
 let g:go_fmt_command = "goimports"

@@ -8,6 +8,7 @@ apps=(
   firefox
   flux
   gitter
+  rowanj-gitx
   google-chrome
   google-cloud-sdk
   gpg-suite
