@@ -9,9 +9,11 @@ apps=(
   ag
   ack
   bash-completion2
+  ctags
   dep
   direnv
   dockutil
+  fswatch
   fzf
   git
   go
@@ -26,6 +28,7 @@ apps=(
   postgres
   python
   rbenv
+  ripgrep
   seattle-beach/tap/git-together
   tmux
   travis
