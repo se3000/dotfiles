@@ -21,6 +21,7 @@ apps=(
   grep
   heroku
   hub
+  jq
   kubectl
   lynx
   m-cli
