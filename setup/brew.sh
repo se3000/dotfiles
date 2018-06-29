@@ -13,6 +13,7 @@ apps=(
   dep
   direnv
   dockutil
+  ethereum/ethereum/solidity
   fswatch
   fzf
   git
