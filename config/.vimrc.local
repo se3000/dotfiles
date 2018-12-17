@@ -1,18 +1,19 @@
 "
 " Colorschemes from Pivotal
 "
-Plugin 'tpope/vim-vividchalk'
-Plugin 'tpope/vim-projectionist'
-Plugin 'molokai'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'wgibbs/vim-irblack'
-Plugin 'candycode.vim'
-Plugin 'Colour-Sampler-Pack'
-Plugin 'flazz/vim-colorschemes'
+Plug 'tpope/vim-vividchalk'
+Plug 'tpope/vim-projectionist'
+Plug 'tomasr/molokai'
+Plug 'altercation/vim-colors-solarized'
+Plug 'wgibbs/vim-irblack'
+Plug 'vim-scripts/candycode.vim'
+Plug 'vim-scripts/Colour-Sampler-Pack'
+Plug 'flazz/vim-colorschemes'
 
 set expandtab
 set nocursorline
 set synmaxcol=150
+set rtp+=~/.vim/plugged/vim-colors-solarized
 
 colorscheme solarized
 if getcwd() ==# '/Users/steve/workspace/go_path/src/github.com/smartcontractkit/chainlink'
