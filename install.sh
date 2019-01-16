@@ -17,7 +17,6 @@ export DOTFILES_DIR
 . "$DOTFILES_DIR/setup/rustup.sh"
 . "$DOTFILES_DIR/setup/defaults.sh"
 
-mkdir ~/workspace/go_path
-ln -s ~/workspace/go_path ~/go
+mkdir ~/go
 
 launchctl bootout user/$(id -u $(whoami))
