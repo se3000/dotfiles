@@ -3,6 +3,7 @@ prepend-path "/usr/bin"
 prepend-path "/usr/local/bin"
 prepend-path "$GOPATH/bin"
 prepend-path "$HOME/.cargo/bin"
+prepend-path "$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin"
 
 # Remove duplicates (preserving prepended items)
 # Source: http://unix.stackexchange.com/a/40755
