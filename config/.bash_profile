@@ -19,8 +19,6 @@ tmux source-file ~/.tmux.conf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 [ -f /Users/steve/.travis/travis.sh ] && source /Users/steve/.travis/travis.sh
 [ -f ~/.git-completion.bash ] && . ~/.git-completion.bash
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
 
 [ -f "$HOME/.bash_profile.local" ] && source "$HOME/.bash_profile.local"
 
