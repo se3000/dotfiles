@@ -20,7 +20,6 @@ apps=(
   go
   grc
   grep
-  heroku
   hub
   jq
   kubectl
