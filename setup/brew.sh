@@ -9,6 +9,7 @@ apps=(
   ag
   ack
   bash-completion2
+  circleci
   ctags
   dep
   direnv
