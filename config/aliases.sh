@@ -3,10 +3,10 @@ alias functions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'"
 alias paths='echo -e ${PATH//:/\\n}'
 
 alias go="grc go"
-alias gt="go test ./... -p 2"
-alias gt0="GOCACHE=off gt"
-alias gtr="go test -v ./... -p 2 -run"
-alias gtr0="GOCACHE=off gtr"
+alias gt="go test -p 2 ./..."
+alias gt0="GOCACHE=off go test -p 2 ./..."
+alias gtr="go test -v ./... -run"
+alias gtr0="GOCACHE=off go test -v -p 2 ./... -run"
 alias gitw="alias git=git-together"
 alias rspec="bundle exec rspec"
 
