@@ -35,3 +35,21 @@ map <leader>c :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%"
 map <c-c> :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%").":".line(".")<CR>
 unmap <c-h>
 unmap <c-l>
+
+let g:ale_linters = {
+  \ 'go': ['golint'],
+  \ 'elixir': ['elixir-ls', 'mix'],
+  \ 'typescript': ['tslint'],
+  \ 'javascript': ['eslint'],
+  \ 'css': ['prettier']
+  \ }
+let g:ale_fixers = {
+  \ 'go': ['gofmt'],
+  \ 'elixir': ['mix_format'],
+  \ 'typescript': ['tslint'],
+  \ 'javascript':  ['eslint'],
+  \ 'css': ['prettier']
+  \ }
+let g:ale_elixir_elixir_ls_release = expand($HOME . '/workspace/elixir-ls/rel')
+let g:ale_fix_on_save = 1
+nmap <leader>d <Plug>(ale_go_to_definition)
