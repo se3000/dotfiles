@@ -9,6 +9,7 @@ apps=(
   ag
   ack
   bash-completion2
+  bat
   circleci
   ctags
   dep
@@ -26,6 +27,7 @@ apps=(
   kubectl
   lynx
   m-cli
+  md5sha1sum
   npm
   postgres
   python
