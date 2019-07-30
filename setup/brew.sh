@@ -10,7 +10,9 @@ apps=(
   ack
   bash-completion2
   bat
+  build-essentials
   circleci
+  coreutils
   ctags
   dep
   direnv
@@ -19,9 +21,11 @@ apps=(
   fswatch
   fzf
   git
+  git-flow
   go
   grc
   grep
+  hexyl
   hub
   jq
   kubectl
