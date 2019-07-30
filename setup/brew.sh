@@ -29,6 +29,7 @@ apps=(
   m-cli
   md5sha1sum
   npm
+  nvm
   postgres
   python
   rbenv
@@ -46,3 +47,4 @@ apps=(
 brew install "${apps[@]}"
 
 . /usr/local/opt/fzf/install
+nvm alias default node
