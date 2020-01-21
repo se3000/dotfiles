@@ -21,6 +21,7 @@ apps=(
   shiftit
   skitch
   slack
+  spotify
   textual
   the-unarchiver
   virtualbox

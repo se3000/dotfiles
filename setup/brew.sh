@@ -10,7 +10,6 @@ apps=(
   ack
   bash-completion2
   bat
-  build-essentials
   circleci
   coreutils
   ctags
@@ -38,7 +37,6 @@ apps=(
   python
   rbenv
   ripgrep
-  seattle-beach/tap/git-together
   tmux
   travis
   watch
