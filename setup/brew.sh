@@ -49,4 +49,6 @@ apps=(
 brew install "${apps[@]}"
 
 . /usr/local/opt/fzf/install
+source ~/.bash_profile
+nvm install 10.16.3
 nvm alias default node
