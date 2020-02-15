@@ -16,6 +16,7 @@ apps=(
   dep
   direnv
   dockutil
+  docker-compose
   ethereum/ethereum/solidity
   fswatch
   fzf
@@ -42,6 +43,7 @@ apps=(
   watch
   vim
   wget
+  wireguard-tools
   yarn
   youtube-dl
 )

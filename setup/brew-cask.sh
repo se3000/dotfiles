@@ -3,6 +3,7 @@
 apps=(
   bartender
   blockblock
+  discord
   docker
   dropbox
   firefox
@@ -18,6 +19,8 @@ apps=(
   little-snitch
   macdown
   micro-snitch
+  muzzle
+  notion
   shiftit
   skitch
   slack
