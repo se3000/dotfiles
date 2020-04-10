@@ -8,6 +8,7 @@ brew upgrade
 apps=(
   ag
   ack
+  asdf
   bash-completion2
   bat
   circleci
@@ -33,10 +34,8 @@ apps=(
   m-cli
   md5sha1sum
   npm
-  nvm
   postgres
   python
-  rbenv
   ripgrep
   tmux
   travis
