@@ -23,6 +23,7 @@ apps=(
   fzf
   git
   git-flow
+  git-extras
   go
   grc
   grep
@@ -44,6 +45,7 @@ apps=(
   wget
   wireguard-tools
   yarn
+  ykman
   youtube-dl
 )
 

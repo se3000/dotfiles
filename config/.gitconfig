@@ -1,6 +1,7 @@
 [user]
 	name = Steve Ellis
 	email = email@steveell.is
+	signingkey = 11F522D41A1EC9CE318ED029E51F53FE9C9DE9B6
 
 [core]
   excludesfile = ~/.gitignore_global
@@ -35,3 +36,5 @@
 	active = se
 [git-together "user"]
 	name = Steve Ellis
+[commit]
+	gpgsign = true
