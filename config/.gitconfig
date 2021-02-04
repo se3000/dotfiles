@@ -6,6 +6,7 @@
 [core]
   excludesfile = ~/.gitignore_global
   editor = vim
+	hooksPath = /Users/steve/workspace/dotfiles/githooks
 
 [alias]
   amend = commit --amend --reuse-message=HEAD
@@ -38,3 +39,7 @@
 	name = Steve Ellis
 [commit]
 	gpgsign = true
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
+[pull]
+	rebase = true
