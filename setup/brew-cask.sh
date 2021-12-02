@@ -1,7 +1,7 @@
 # Install packages
 
 apps=(
-  bartender
+  aws-vault
   blockblock
   discord
   docker

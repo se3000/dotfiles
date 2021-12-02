@@ -24,11 +24,11 @@ apps=(
   git
   git-flow
   git-extras
+  github/gh/gh
   go
   grc
   grep
   hexyl
-  hub
   jq
   kubectl
   lynx
