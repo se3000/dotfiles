@@ -1,3 +1,4 @@
+export PATH=/opt/homebrew/bin:$PATH
 export WORKSPACE="$HOME/workspace"
 export GOPATH="$WORKSPACE/go_path"
 export DOTFILES_DIR="$WORKSPACE/dotfiles"
@@ -23,9 +24,9 @@ tmux source-file ~/.tmux.conf
 source "$BASH_IT"/bash_it.sh
 eval "$(direnv hook bash)"
 
-export PATH="$HOME/.cargo/bin:$PATH"
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 . /usr/local/opt/asdf/asdf.sh
 . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+. "$HOME/.cargo/env"
