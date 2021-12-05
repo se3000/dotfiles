@@ -5,22 +5,19 @@ apps=(
   blockblock
   discord
   docker
-  dropbox
   firefox
   rowanj-gitx
   google-chrome
   gpg-suite
+  hammerspoon
   iterm2
   keybase
   knockknock
   little-snitch
-  macdown
   notion
-  shiftit
   slack
   spotify
-  textual
   the-unarchiver
 )
 
-brew cask install "${apps[@]}"
+brew install -f --cask "${apps[@]}"
