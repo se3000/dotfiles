@@ -28,7 +28,7 @@ apps=(
   ykman
 )
 
-brew install "${apps[@]}"
+brew install -f "${apps[@]}"
 
-. /usr/local/opt/fzf/install
-source ~/.bash_profile
+./opt/homebrew/opt/fzf/install
+source ~/.zshrc

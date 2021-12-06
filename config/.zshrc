@@ -13,8 +13,7 @@ export SCM_CHECK=true
 
 tmux source-file ~/.tmux.conf
 
-#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-#[ -f ~/.git-completion.bash ] && . ~/.git-completion.bash
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(direnv hook bash)"
 
