@@ -8,6 +8,7 @@ After gutting [webpro's dotfiles](https://github.com/webpro/dotfiles)(except his
     xcode-select --install
     mkdir ~/workspace && cd ~/workspace
     ssh-keygen
+    cat ~/.ssh/id_rsa.pub
 ```
 
 Add key to Github
