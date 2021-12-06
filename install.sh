@@ -5,7 +5,6 @@ export DOTFILES_DIR
 
 . "$DOTFILES_DIR/symlink_dotfiles.sh"
 . "$DOTFILES_DIR/setup/brew.sh"
-. "$DOTFILES_DIR/setup/git.sh"
 . "$DOTFILES_DIR/setup/brew-cask.sh"
 . "$DOTFILES_DIR/setup/tmux.sh"
 . "$DOTFILES_DIR/setup/vim.sh"
