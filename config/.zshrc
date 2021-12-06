@@ -20,3 +20,4 @@ eval "$(direnv hook bash)"
 #. /usr/local/opt/asdf/asdf.sh
 #. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 . "$HOME/.cargo/env"
+autoload -Uz compinit && compinit -u
