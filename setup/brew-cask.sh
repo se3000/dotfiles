@@ -17,7 +17,6 @@ apps=(
   slack
   spotify
   the-unarchiver
-  zoom
 )
 
 brew install -f --cask "${apps[@]}"
