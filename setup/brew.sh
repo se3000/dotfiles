@@ -6,6 +6,7 @@ brew upgrade
 # Install packages
 
 apps=(
+  ag
   asdf
   bash-completion2
   circleci

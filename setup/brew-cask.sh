@@ -11,13 +11,13 @@ apps=(
   gpg-suite
   hammerspoon
   iterm2
-  keybase
   knockknock
   little-snitch
   notion
   slack
   spotify
   the-unarchiver
+  zoom
 )
 
 brew install -f --cask "${apps[@]}"
