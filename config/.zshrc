@@ -7,17 +7,12 @@ for file in "$DOTFILES_DIR"/config/*.sh; do
  [ -f $file ] && . $file
 done
 
-#export BASH_IT_THEME='bobby'
-unset MAILCHECK
-export SCM_CHECK=true
-
 tmux source-file ~/.tmux.conf
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-eval "$(direnv hook bash)"
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
-#. /usr/local/opt/asdf/asdf.sh
-#. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 . "$HOME/.cargo/env"
-autoload -Uz compinit && compinit -u
+
+eval "$(direnv hook zsh)"
