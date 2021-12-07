@@ -10,13 +10,8 @@ alias gtr0="GOCACHE=off go test -v -p 4 ./... -run"
 alias gitw="alias git=git-together"
 alias rspec="bundle exec rspec"
 
-alias clgo="cd ~/go/src/github.com/smartcontractkit/chainlink/"
-alias clrb="ws chainlink-ruby"
 alias dotfiles="ws dotfiles"
-alias tmuxn="tmux -S /tmp/tmux-501/default"
-alias tmuxr="tmux -S /tmp/tmux-501/default attach"
-alias tmuxn_pair="tmux -S /tmp/pair"
-alias tmuxr_pair="tmux -S /tmp/pair attach"
+alias tmuxr="tmux attach"
 
 # https://github.com/dimroc/dotfiles/blob/master/bash_profile_includes/aliases.sh
 alias ll="ls -lAh"
