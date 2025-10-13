@@ -1,7 +1,9 @@
 # Install packages
 
 apps=(
+  1password
   blockblock
+  chatgpt
   docker
   firefox
   google-chrome

@@ -33,7 +33,7 @@ apps=(
 brew install -f "${apps[@]}"
 
 brew tap universal-ctags/universal-ctags
-brew install --HEAD universal-ctags
+brew install -f --HEAD universal-ctags
 
 ./opt/homebrew/opt/fzf/install
 source ~/.zshrc
