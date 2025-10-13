@@ -1,6 +1,5 @@
-export PATH=/opt/homebrew/bin:$PATH
+export PATH=/opt/homebrew/bin:$GOPATH:$PATH
 export WORKSPACE="$HOME/workspace"
-export GOPATH="$WORKSPACE/go_path"
 export DOTFILES_DIR="$WORKSPACE/dotfiles"
 
 for file in "$DOTFILES_DIR"/config/*.sh; do

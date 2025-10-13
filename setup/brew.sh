@@ -15,14 +15,12 @@ apps=(
   docker-compose
   fzf
   git
-  github/gh/gh
   go
-  grc
-  grep
   jq
   postgres
   python
   ripgrep
+  rust-analyzer
   tmux
   vim
   yarn
@@ -30,6 +28,9 @@ apps=(
 )
 
 brew install -f "${apps[@]}"
+
+brew tap universal-ctags/universal-ctags
+brew install --HEAD universal-ctags
 
 ./opt/homebrew/opt/fzf/install
 source ~/.zshrc
