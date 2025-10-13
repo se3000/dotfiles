@@ -7,7 +7,6 @@ brew upgrade
 
 apps=(
   ag
-  asdf
   bash-completion2
   circleci
   coreutils
@@ -17,10 +16,12 @@ apps=(
   git
   go
   jq
+  mise
   postgres
   python
   ripgrep
   rust-analyzer
+  scc
   tmux
   vim
   yarn
