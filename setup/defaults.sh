@@ -27,9 +27,12 @@ defaults write com.apple.sound.beep.feedback -bool false
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
+<<<<<<< HEAD
 # Menu bar: disable transparency
 #sudo defaults write com.apple.universalaccess reduceTransparency -bool true
 
+=======
+>>>>>>> 9f5e292 (remove problematic mac defaults)
 # Menu bar: show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent NO
 
@@ -239,8 +242,11 @@ defaults write com.apple.dock wvous-bl-corner -int 0
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
 # Bottom right screen corner
-defaults write com.apple.dock wvous-br-corner -int 0
-defaults write com.apple.dock wvous-br-modifier -int 0
+# defaults write com.apple.dock wvous-br-corner -int 0
+# defaults write com.apple.dock wvous-br-modifier -int 0
+
+# Add a context menu item for showing the Web Inspector in web views
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 ###############################################################################
 # Spotlight                                                                   #
