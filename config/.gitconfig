@@ -6,40 +6,28 @@
 [core]
   excludesfile = ~/.gitignore_global
   editor = vim
-	hooksPath = /Users/steve/workspace/dotfiles/githooks
 
 [alias]
   amend = commit --amend --reuse-message=HEAD
   br = branch
   ci = commit
   co = checkout
-  contrib = shortlog --summary --numbered
-  cr = clone --recursive
-  df = diff --word-diff
   g = grep --break --heading --line-number
-  lg = log -p
-  ll = log --pretty=oneline --graph --abbrev-commit
-  lm = log --pretty=format:'* %s (%h)'
-  patch = !git --no-pager diff --no-color
   p = push
-  pf = push --force
   show-ignored = "! git clean -ndX | perl -pe 's/Would remove/Ignored:/'"
   st = status
-  stl = ls-files -m -o --exclude-standard
-  sts = status -sb
-  unstage = reset --hard HEAD
 
 [credential]
   helper = osxkeychain
 [include]
-	path = /Users/steve/.git-together
+  path = /Users/steve/.git-together
 [git-together]
-	active = se
+  active = se
 [git-together "user"]
-	name = Steve Ellis
+  name = Steve Ellis
 [commit]
-	gpgsign = true
+  gpgsign = true
 [url "ssh://git@github.com/"]
   insteadOf = https://github.com/
 [pull]
-	rebase = true
+  rebase = true

@@ -40,14 +40,12 @@ unmap <c-l>
 
 let g:ale_linters = {
   \ 'go': ['golint'],
-  \ 'elixir': ['elixir-ls', 'mix'],
   \ 'typescript': ['eslint', 'tsserver'],
   \ 'javascript': ['eslint', 'tsserver'],
   \ 'css': ['prettier']
   \ }
 let g:ale_fixers = {
   \ 'go': ['gofmt'],
-  \ 'elixir': ['mix_format'],
   \ 'typescript': ['prettier', 'eslint'],
   \ 'javascript': ['prettier', 'eslint'],
   \ 'css': ['prettier']

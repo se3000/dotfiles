@@ -10,8 +10,6 @@ tmux source-file ~/.tmux.conf
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
 . "$HOME/.cargo/env"
 
 eval "$(direnv hook zsh)"
