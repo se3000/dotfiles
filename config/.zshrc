@@ -2,8 +2,6 @@ for file in "$DOTFILES_DIR"/config/*.sh; do
  [ -f $file ] && . $file
 done
 
-tmux source-file ~/.tmux.conf
-
 [ -f ~/.fzf.zsh ] && {
   source ~/.fzf.zsh
   bindkey '^[[A' fzf-history-widget
