@@ -9,6 +9,7 @@ apps=(
   iterm2
   knockknock
   little-snitch
+  rectangle
   the-unarchiver
 )
 

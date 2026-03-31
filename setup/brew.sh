@@ -7,6 +7,7 @@ brew upgrade
 
 apps=(
   ag
+  age
   bash-completion2
   circleci
   coreutils
@@ -17,6 +18,7 @@ apps=(
   go
   jq
   mise
+  node
   postgres
   python
   ripgrep
