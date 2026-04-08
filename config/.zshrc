@@ -1,3 +1,5 @@
+# Managed in se3000/dotfiles — edit there, not here.
+
 for file in "$DOTFILES_DIR"/config/*.sh; do
  [ -f $file ] && . $file
 done

@@ -1,0 +1,8 @@
+[user]
+	signingKey = key::sk-ssh-ed25519@openssh.com <your-public-key>
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	allowedSignersFile = /path/to/allowed_signers

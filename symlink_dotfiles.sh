@@ -6,5 +6,6 @@ DOTFILES_DIR="$( cd "$( dirname "${ZSH_SOURCE[0]}" )" && pwd )"
 echo "symlinking dotfiles..."
 
 for file in "$DOTFILES_DIR/config/.*"; do
+  [[ $file == *.example ]] && continue
   ln -sfv $file ~
 done

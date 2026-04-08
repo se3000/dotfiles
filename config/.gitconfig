@@ -1,7 +1,7 @@
+# Managed in se3000/dotfiles — edit there, not here. Machine-specific settings go in ~/.gitconfig.local.
 [user]
-	name = Steve Ellis
-	email = email@steveell.is
-	signingkey = 11F522D41A1EC9CE318ED029E51F53FE9C9DE9B6
+  name = Steve Ellis
+  email = email@steveell.is
 
 [core]
   excludesfile = ~/.gitignore_global
@@ -31,3 +31,5 @@
   insteadOf = https://github.com/
 [pull]
   rebase = true
+[include]
+  path = ~/.gitconfig.local

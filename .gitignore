@@ -1,2 +1,4 @@
 .cache.sh
 system/.custom
+config/.gitconfig.local
+config/.zshenv.local

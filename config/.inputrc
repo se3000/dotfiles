@@ -1,3 +1,5 @@
+# Managed in se3000/dotfiles — edit there, not here.
+
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
 

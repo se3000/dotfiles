@@ -1,3 +1,5 @@
+# Managed in se3000/dotfiles — edit there, not here.
+
 export EDITOR="vim"
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
