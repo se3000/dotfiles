@@ -194,6 +194,9 @@ defaults write com.apple.dock showhidden -bool true
 # No bouncing icons
 defaults write com.apple.dock no-bouncing -bool true
 
+# Don't show recent/suggested apps in Dock
+defaults write com.apple.dock show-recents -bool false
+
 # Transparent dock
 defaults write com.apple.dock hide-mirror -bool true;killall Dock
 
