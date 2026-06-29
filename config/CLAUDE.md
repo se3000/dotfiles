@@ -1,0 +1,1 @@
+Always use git worktrees.
