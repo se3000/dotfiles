@@ -13,6 +13,7 @@ npm-debug.log
 tags
 .envrc
 .tool-versions
+**/.claude
 
 **/.claude/.cc-writes/
 
